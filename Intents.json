@@ -1,0 +1,67 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "factory order",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetRemoteDataIntent",
+                    "slots": [
+                        {
+                            "name": "ticket_id",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "factory order {ticket_id}",
+                        "a order",
+                        "a factory order",
+                        "tell me a status",
+                        "tell me a ticket status",
+                        "give me some information",
+                        "give me some order information",
+                        "tell me something",
+                        "give me something"
+                    ]
+                },
+                {
+                    "name": "OrderIntent",
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "tell me the status of ticket {status}",
+                        "what is the status of ticket {status}",
+                        "ticket status {status}"
+                    ]
+                },
+                {
+                    "name": "GetViewIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me the ticket summary"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
